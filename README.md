@@ -38,7 +38,7 @@ This is a simple class management system implemented in Bash, utilizing SQLite f
 
   ```bash
   chmod +x class_management.sh
-  ``
+  ```
 
 ## Usage
 
