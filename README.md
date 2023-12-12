@@ -1,70 +1,81 @@
-# ShellScript-Class-Management
-Class management script for OS-class written in shellscript.
-## description:
-this program is a simple program that can store the information of students
-and can show the information of students
-the program can store the information of students in a file called student.txt
-the program can show the information of students in a file called student.txt
-the program can show the information of students in os and os-lib
-the program can search the information of students by id
+# Class Management System
 
-## how to use:
-1. ### get information
-  - get student information
-      - please enter the student id:
-      - please enter the student name:
-      - please enter the student lastname:
-  - continue
-  - exit
-2. ### students points
-  - get students points
-      - please enter the student id:
-      - please enter the student points at OS:
-      - please enter the student points at OS-lib:   
-  - continue
-  - exit
-3. ### result
-  - search by id
-      - please enter the student id:
-  - show all students in os
-  - show all students in os-lib
-4. exit
-  ![read](https://github.com/MohammadrezaAmani/ShellScript-Class-Management/blob/main/Images/save.png)
-  ![read](https://github.com/MohammadrezaAmani/ShellScript-Class-Management/blob/main/Images/read.png)
-## logic:
-at the first program shows the main menu with 4 choices using echo
-the user can choose the choice by inputting the number
-after that we havea while loop that will run until the user choose the exit choice
-the main menu has 4 choices
-- the first choice is to get information
-- the second choice is to get the students points
-- the third choice is to show the result
-- the fourth choice is to exit
-- the get information menu has 2 choices
-the first choice is to get the student information
-- the user can enter the student id and name and lastname
-  - the user must enter the student id
-  - the user must enter the student name
-  - the user must enter the student lastname
-after the user enter the information the information will be saved in the file student.txt in the format of id name lastname
-- the user can continue to the next choice
-- the user can exit the program
-the second choice is to continue
-the students points menu has 2 choices
-- the first choice is to get the students points
-  - the user can enter the student id and the points at os and os-lib
-  - the user can enter the student id
-  - the user can enter the student points at os
-  - the user can enter the student points at os-lib
-- after the user enter the information the information will be saved in the file student.txt in the format of id name lastname os points os-lib points the user can continue to the next choice
-- the user can exit the program
-- the third choice is to show the result
-- the result menu has 3 choices
-  - the first choice is to search by id
-  - the user can enter the student id
-      in this choice the program will find the student by id and print the information in the format of id name lastname
-      in the syntax of awk we can use the format of id name lastname os points os-lib points
-  - the user can continue to the next choice
-  - the user can exit the program
-  - the fourth choice is to exit
-- the program will exit after the user choose the exit choice
+This is a simple class management system implemented in Bash, utilizing SQLite for data storage. The system allows users to set student information, update student points, search for students by ID, and view results.
+
+## Features
+
+- **Set Information:** Add new student information, including name and last name.
+- **Students Points:** Set and update student points for OS and OS-lib subjects.
+- **Result:** Search for students by ID and view all students with points in OS or OS-lib.
+- **Exit:** Terminate the program.
+
+## Requirements
+
+- Bash (Bourne Again SHell)
+- SQLite
+
+## Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/MohammadrezaAmani/class-management-system.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd class-management-system
+   ```
+
+3. Run the script:
+
+   ```bash
+   ./class_management.sh
+   ```
+
+- if there is any error like `Permission denied` you can use this command then run the script again:
+
+  ```bash
+  chmod +x class_management.sh
+  ``
+
+## Usage
+
+Follow the on-screen menu to perform various actions:
+
+- **Set Information:** Add new students to the system.
+- **Students Points:** Set and update points for existing students.
+- **Result:** Search for students by ID or view all students with points in a specific subject.
+- **Exit:** Terminate the program.
+
+## Database
+
+The system uses SQLite for data storage. The database file (`students.db`) is automatically created in the project directory.
+
+## Contributing
+
+If you'd like to contribute to this project, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them.
+4. Push your changes to your fork.
+5. Submit a pull request to the main repository.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+## Acknowledgments
+
+- The script is inspired by the need for a simple class management system.
+- Special thanks to [SQLite](https://www.sqlite.org/) for providing a lightweight database solution.
+
+## Author
+
+[Your Name]
+
+## Contact
+
+For any inquiries, please contact [more.amani@yahoo.com](mailto:more.amani@yahoo.com).
