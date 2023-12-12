@@ -72,9 +72,6 @@ This project is licensed under the [MIT License](LICENSE).
 - The script is inspired by the need for a simple class management system.
 - Special thanks to [SQLite](https://www.sqlite.org/) for providing a lightweight database solution.
 
-## Author
-
-[Your Name]
 
 ## Contact
 
