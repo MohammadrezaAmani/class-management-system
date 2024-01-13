@@ -2,17 +2,6 @@
 
 This is a simple class management system implemented in Bash, utilizing SQLite for data storage. The system allows users to set student information, update student points, search for students by ID, and view results.
 
-## Features
-
-- **Set Information:** Add new student information, including name and last name.
-- **Students Points:** Set and update student points for OS and OS-lib subjects.
-- **Result:** Search for students by ID and view all students with points in OS or OS-lib.
-- **Exit:** Terminate the program.
-
-## Requirements
-
-- Bash (Bourne Again SHell)
-- SQLite
 
 ## Installation
 
@@ -37,7 +26,7 @@ This is a simple class management system implemented in Bash, utilizing SQLite f
 - if there is any error like `Permission denied` you can use this command then run the script again:
 
   ```bash
-  chmod +x class_management.sh
+  chmod +x ./class_management.sh
   ```
 
 ## Usage
@@ -53,16 +42,3 @@ Follow the on-screen menu to perform various actions:
 
 The system uses SQLite for data storage. The database file (`students.db`) is automatically created in the project directory.
 
-## Contributing
-
-If you'd like to contribute to this project, please follow these steps:
-
-1. Fork the repository.
-2. Create a new branch for your feature or bug fix.
-3. Make your changes and commit them.
-4. Push your changes to your fork.
-5. Submit a pull request to the main repository.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
